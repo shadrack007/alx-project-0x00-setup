@@ -6,7 +6,7 @@ import STAR_IMAGE from "@/public/assets/images/star.png";
 
 const Card: React.FC = () => {
   return (
-    <div>
+    <div className="w-[378.56px] h-[499.37px] cursor-pointer hover:shadow-md hover:rounded-lg ">
       <Image
         alt="house image"
         src={HOUSE_IMAGE}
@@ -21,7 +21,7 @@ const Card: React.FC = () => {
         <Pill />
       </div>
 
-      <div>
+      <div className="flex items-center justify-between">
         <div>
           <h3 className="font-semibold text-[22px]">
             Villa Arrecife Beach House
@@ -37,9 +37,9 @@ const Card: React.FC = () => {
         </div>
       </div>
 
-      <div>
-        <div>
-          <div>
+      <div className="flex justify-between mt-4">
+        <div className="grid grid-cols-3 px-2 py-1 border rounded-full w-[156px]">
+          <div className="flex items-center">
             <svg
               width="21"
               height="21"
@@ -58,7 +58,7 @@ const Card: React.FC = () => {
             </svg>
             <p className="font-medium ml-1 text-[12.95px]">4</p>
           </div>
-          <div>
+          <div className="flex items-center">
             <svg
               width="18"
               height="18"
@@ -90,7 +90,7 @@ const Card: React.FC = () => {
             <p className="ml-1 text-[12.95px] font-medium">2</p>
           </div>
 
-          <div>
+          <div className="flex items-center">
             <svg
               width="18"
               height="18"
